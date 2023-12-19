@@ -1,0 +1,228 @@
+@font-face {
+    font-family: 'Questrian';
+    src: url('Questrian.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Questrian', cursive, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.3s ease; /
+}
+
+body.dark-mode {
+    background: #333;
+}
+
+.background-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("back.png") no-repeat center center fixed;
+    background-size: cover;
+    filter: blur(10px);
+    z-index: -1;
+    transition: filter 0.3s ease;
+}
+
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-box {
+    width: 450px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transform: translateY(-50px);
+    animation: fadeInUp 1s ease forwards, scaleIn 0.5s ease forwards;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes scaleIn {
+    0% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.login-box h2 {
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+form input {
+    width: 95%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(0, 155, 255);
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, font-weight 0.2s ease;
+    transform-origin: center;
+    font-weight: bold;
+}
+
+form button:hover {
+    background-color: #009bff; 
+    transform: scale(1.05);
+    font-weight: normal;
+}
+
+form input, form button {
+    outline: none;
+}
+
+.buttons {
+    margin-top: 10px;
+}
+
+.buttons a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease; 
+}
+
+.divider {
+    color: #fff;
+}
+
+.logo img {
+    width: 120px;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+img {
+    border: none;
+    outline: none;
+}
+
+.logo img:hover {
+    transform: scale(1.1);
+}
+
+.dark-mode-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.h-captcha{
+    margin-top: 1vh;
+}
+
+.DLI {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: rgba(30,30,30,.35);
+    /* background-color: #0056b3; */
+    border-radius: 5px;
+    width: 87.5%;
+    margin-left: 5%;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.DLI:hover {
+    background-color: rgba(0,155,255,.35);
+    transform: scale(1.02);
+}
+
+.DIMG {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+}
+
+.DIMG:hover {
+    transform: scale(1.1);
+}
+
+.DUN {
+    flex: 1;
+    font-weight: bold;
+}
+
+.DBTN {
+    font-family: "Questrian", cursive;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.DBTN:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+
+
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(0, 155, 255);
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, font-weight 0.2s ease;
+    transform-origin: center;
+    font-weight: bold;
+}
+
+.content {
+    margin-left: 0;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100vh;
+    width: 100vw;
+    /* display: flex; */
+    /* flex-direction: column; */
+}

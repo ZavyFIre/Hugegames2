@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HUGEGames | Register</title>
+	<link rel="canonical" href="https://hugegames.io/login.html" />
+    <link rel="stylesheet" href="static/login-styles.css">
+    <script>
+        function hideErrorPopup() {
+            document.getElementById("errpopup").style.display = "none";
+        }
+        setTimeout(hideErrorPopup, 4000);
+    </script>
+    <style>
+        .popup {
+            position: fixed;
+            top: 25%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 1);
+            z-index: 2;
+            text-align: center;
+            /* background: rgb(30,30,30); */
+            border-radius: 1.5vh;
+            height: 2%;
+            width: 100%;
+            font-size: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="background-overlay"></div>
+    <div id="errpopup" class="popup">
+        <p></p>
+    </div>
+    <div class="login-container">
+        <div class="login-box">
+            <div class="logo">
+                <img src="static/logo.png" alt="Logo">
+            </div>
+            <h2>Login</h2>
+            <form action="#" method="post">
+                <input type="text" placeholder="Username" name="username" required>
+                <input type="password" placeholder="Password" name="password" required>
+                <button type="submit">Login</button>
+        <script src="1/api.js" async defer></script>
+        <div class="h-captcha" data-theme="dark" data-sitekey="4cc60097-0572-4f33-923a-e9c23934f1bc"></div>
+            </form>
+            <div class="buttons" style="font-size: 1;">
+                <a href="register.html">Register Instead</a>
+                <span class="divider">|</span>
+                <a href="#">Forgot Password</a>
+                <a href="https://discord.com/oauth2/authorize?response_type=code&client_id=1177998555579945081&redirect_uri=https%3A%2F%2Fhugegames.io%2Fdiscordlogin&scope=identify+email+guilds+guilds.join&state=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfX3N0YXRlX3NlY3JldF8iOiJmWlJkMDFPN0xmQXI2OUllbmV3VmJTNU4xa2lvbWUifQ.NZDu0ZwipniQuh97fyYDlPMw6YJiy3IYANYUSfEeLVw&prompt=consent"><br>Login With Discord</a>
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html>
